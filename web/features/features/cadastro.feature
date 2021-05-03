@@ -35,7 +35,7 @@ Funcionalidade: Realizar cadastro na plataforma InMetrics
     E que eu preenchi o campo confirmar senha com o valor "11223344"
     Quando eu clicar em "Cadastrar"
     Então eu verei uma mensagem de erro com o texto "Usuário já cadastrado"
-    
+
   Cenário: Realizar cadastro com sucesso
     Dado que eu esteja na página de cadastro
     E que eu preenchi o campo usuário com o valor "AUT"
