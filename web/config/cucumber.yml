@@ -1,3 +1,2 @@
-default: --profile html_report --publish-quiet
-docker: --format AllureCucumber::CucumberFormatter --publish-quiet
-html_report: --format AllureCucumber::CucumberFormatter --format pretty --color
+default: --format pretty --color --publish-quiet
+allure: --format AllureCucumber::CucumberFormatter --publish-quiet

@@ -16,9 +16,13 @@ Para executar o projeto em máquina local:
 ```` shell
 bundle exec cucumber
 ````
+Para caso queira um report allure de forma local:
+```` shell
+bundle exec cucumber --profle allure
+````
 Para caso queria executar em uma máquina docker
 ```` shell
-docker-compose run ruby cucumber
+docker-compose run ruby cucumber --profile allure
 ````
 ##Report
 Aqui estou usando o allure report como ferramenta. Por 
