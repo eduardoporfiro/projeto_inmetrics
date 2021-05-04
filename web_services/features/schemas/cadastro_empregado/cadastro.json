@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "id": "file:/cadastro_empregado/cadastro.json#",
+  "type": "object",
+  "properties": {
+    "empregadoId": {"type": "integer"},
+    "nome": {"type": "string"},
+    "sexo": {"type": "string"},
+    "cpf": {"type": "string"},
+    "admissao": {"type": "string"},
+    "salario": {"type": "string"},
+    "comissao": {"type": "string"},
+    "tipoContratacao": {"type": "string"}
+  }
+}

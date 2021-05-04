@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem "allure-cucumber"
+gem 'dotenv'
+gem 'httparty'
+gem 'rspec'
+gem 'pry'
+gem 'cucumber'
+gem "json_matchers"
+gem "byebug"
