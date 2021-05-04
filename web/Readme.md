@@ -1,7 +1,7 @@
-#Processo seletivo: InMetrics
+# Processo seletivo: InMetrics
 Como parte do processo seletivo, está o desenvolvimento
 da automação voltado para a plataforma WEB.
-##Instalação
+## Instalação
 Para que seja possível executar o projeto, antes de mais nada
 por favor execute
 ```` shell
@@ -11,7 +11,7 @@ e depois
 ```` shell
 bundle install
 ````
-##Executando
+## Executando
 Para executar o projeto em máquina local:
 ```` shell
 bundle exec cucumber
@@ -24,12 +24,12 @@ Para caso queria executar em uma máquina docker
 ```` shell
 docker-compose run ruby cucumber --profile allure
 ````
-##Report
+## Report
 Aqui estou usando o allure report como ferramenta. Por 
 padrão os reports ficarão na pasta report. Depois de terminado, caso
 queira visualizar, usar a ferramenta o allure para demonstrar. Mais
 informações no link [para instalação do allure](https://docs.qameta.io/allure/)
-###Erros
+### Erros
 Devido ao erro abaixo, não foi possível realizar os testes
 relacionados ao cadastro de funcionário. Assim o cenário de login com sucesso
 terá falha
