@@ -7,7 +7,12 @@ When(/^que eu use usuário como "([^"]*)" e senha como "([^"]*)"$/) do |username
 end
 
 When(/^que eu tenha construido um body usando os parâmetros:$/) do |table|
-  @page.set_body(table.hashes)
+  body = {}
+  table.hashes.each do |value|
+    body[value['KEY'].to_sym] = value['VALUE']
+  end
+  byebug
+  @page.set_body(body)
 end
 
 When(/^eu realizar uma requisição do tipo POST para o endpoint de cadastro de empregado/) do
