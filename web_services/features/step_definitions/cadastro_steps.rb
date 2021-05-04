@@ -11,7 +11,6 @@ When(/^que eu tenha construido um body usando os parâmetros:$/) do |table|
   table.hashes.each do |value|
     body[value['KEY'].to_sym] = value['VALUE']
   end
-  byebug
   @page.set_body(body)
 end
 

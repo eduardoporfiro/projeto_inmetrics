@@ -33,11 +33,11 @@
         |KEY            |VALUE         |
         |admissao       |31/12/2020    |
         |cargo          |SuperQA       |
-        |comissao       |2.000,00       |
+        |comissao       |2.000,00      |
         |cpf            |111.222.333-00|
         |departamentoId |0             |
         |nome           |Eduardo Costa |
-        |salario        |1.000,00       |
+        |salario        |1.000,00      |
         |sexo           |m             |
         |tipoContratacao|clt           |
       Quando eu realizar uma requisição do tipo POST para o endpoint de cadastro de empregado

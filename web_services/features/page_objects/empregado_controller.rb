@@ -9,6 +9,7 @@ module PageObjects
       @deletar_path = '/empregado/deletar/'
       @listar_todos_path = '/empregado/list_all'
       @listar_path = '/empregado/list/'
+      @alterar_path = '/empregado/alterar/'
       @username = nil
       @password = nil
       @body = {}
@@ -60,6 +61,17 @@ module PageObjects
       }
       self.class.delete(@deletar_path+employe_id.to_s, options)
     end
+
+    def alterar(employe_id)
+      verify_employee employe_id
+      options = {
+        :body => @body.to_json,
+        :basic_auth => get_auth,
+        :headers => @header
+      }
+      self.class.put(@alterar_path+employe_id.to_s, options)
+    end
+
     private
 
     def get_auth
